@@ -2,7 +2,7 @@
 # В исходном списке минимум 2 элемента.
 
 def modification(lst):
-    # Здесь пишем код
+    lst[0], lst[-1] = lst[-1], lst[0]
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
@@ -23,3 +23,5 @@ for i, d in enumerate(data):
     assert modification(d) == test_data[i], f'С набором {d} есть ошибка, не проходит проверку'
     print(f'Тестовый набор {d} прошёл проверку')
 print('Всё ок')
+
+
